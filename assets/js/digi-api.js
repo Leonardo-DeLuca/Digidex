@@ -32,3 +32,11 @@ digiApi.getDigimons = (page = 0, pageSize = 10) => {
         .then((detailRequests) => Promise.all(detailRequests))
         .then((digimonsDetails) => digimonsDetails)
 }
+
+digiApi.getDetail = (id) => {
+    const url = `https://digi-api.com/api/v1/digimon/${id}`
+
+    return fetch(url)
+        .then((response) => response.json())
+        .then((digimon) => digimon)
+}

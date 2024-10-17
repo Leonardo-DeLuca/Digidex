@@ -53,6 +53,11 @@
     /* background-color: white; */
 }
 
+.digimon:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
 .digimon .name {
     color: rgb(0, 0, 0);
     margin-bottom: 0.25rem;
@@ -106,6 +111,11 @@
     padding: .5rem 2rem;
     margin: .25rem 0;
     font-size: 1rem;
+}
+
+.paginacao button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .digimon .detail img {
